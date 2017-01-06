@@ -9,7 +9,7 @@
 		<routeBuilder ref="testRouteBuilder" />
 	</camelContext>
 
-	<bean class="" id="testRouteBuilder" />
+	<bean class="com.test.springinvokescamel.DummyRouteBuilder" id="testRouteBuilder" />
 	<!-- Bean which listens to the creation of the application context and holds it -->
-	<bean class="" id="camelCaller" factory-method="getInstance" />
+	<bean class="com.test.springinvokescamel.CamelCaller" id="camelCaller" factory-method="getInstance" />
 </beans>

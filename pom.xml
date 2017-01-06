@@ -5,7 +5,7 @@
 	<groupId>com.test</groupId>
 	<artifactId>springinvokescamel</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
+	<packaging>war</packaging>
 
 	<name>springinvokescamel</name>
 	<url>http://maven.apache.org</url>
@@ -42,13 +42,6 @@
 			<groupId>com.sparkjava</groupId>
 			<artifactId>spark-core</artifactId>
 			<version>2.5.3</version>
-		</dependency>
-
-		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<version>3.8.1</version>
-			<scope>test</scope>
 		</dependency>
 
 	</dependencies>

@@ -10,13 +10,13 @@
 		<param-name>contextConfigLocation</param-name>
 		<param-value>/WEB-INF/applicationContext.xml</param-value>
 	</context-param>
-	
+
 	<filter>
 		<filter-name>SparkFilter</filter-name>
 		<filter-class>spark.servlet.SparkFilter</filter-class>
 		<init-param>
 			<param-name>applicationClass</param-name>
-			<param-value>com.flectosystems.dopweb.services.MonitorService</param-value>
+			<param-value>com.test.springinvokescamel.Service</param-value>
 		</init-param>
 	</filter>
 
@@ -30,13 +30,4 @@
 		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
 	</listener>
 
-	<!-- the listener that kicks the MongoDB Database -->
-	<listener>
-		<listener-class>com.flectosystems.dopweb.servlet.MongoSessionServlet</listener-class>
-	</listener>
-	
-<!-- 	<listener>
-		<listener-class>com.flectosystems.dopweb.servlet.CronServlet</listener-class>
-	</listener> -->
-	
 </web-app>

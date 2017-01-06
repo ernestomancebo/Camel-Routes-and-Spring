@@ -13,7 +13,14 @@ public class DummyRouteBuilder extends RouteBuilder {
 
 				@Override
 				public void process(Exchange exchange) throws Exception {
+					String message = exchange.getIn().getBody(String.class);
+					int lettersCount = 0;
 					
+					if (message != null) {
+						lettersCount = message.length();
+					}
+					
+					exchange.getOut().setBody(lettersCount);
 				}
 				
 			})
